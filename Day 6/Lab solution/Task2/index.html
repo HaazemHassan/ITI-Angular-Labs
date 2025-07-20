@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Validation Game</h1>
+      <form id="validationForm" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <div class="input-wrapper">
+            <input type="text" id="name" name="name" />
+            <p class="error-message" id="nameError">
+              name length must be > 4 letters
+            </p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Pass</label>
+          <div class="input-wrapper">
+            <input type="password" id="password" name="password" />
+            <p class="error-message" id="passError">
+              pass length must be > 8 letters
+            </p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <div class="input-wrapper">
+            <input type="email" id="email" name="email" />
+            <p class="error-message" id="emailError">mail not valid</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="input-wrapper">
+            <div class="radio-group">
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Female</label>
+            </div>
+            <p class="error-message" id="genderError">choose your gender</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Sport</label>
+          <div class="input-wrapper">
+            <div class="checkbox-group">
+              <input type="checkbox" id="tennis" name="sport" value="tennis" />
+              <label for="tennis">Tennis</label>
+              <input
+                type="checkbox"
+                id="football"
+                name="sport"
+                value="football"
+              />
+              <label for="football">Football</label>
+              <input
+                type="checkbox"
+                id="volleyball"
+                name="sport"
+                value="volleyball"
+              />
+              <label for="volleyball">Volleyball</label>
+            </div>
+            <p class="error-message" id="sportError">choose your sport</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country</label>
+          <div class="input-wrapper">
+            <select id="country" name="country">
+              <option value="Egyptian">Egyptian</option>
+              <option value="American">American</option>
+              <option value="British">British</option>
+              <option value="Canadian">Canadian</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" class="btn-submit">Submit</button>
+          <button type="reset" class="btn-reset">Reset</button>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

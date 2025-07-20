@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.stopwatch-container {
+  text-align: center;
+}
+
+h2 {
+  margin: 0 0 10px;
+}
+
+.time-display {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.milliseconds {
+  font-size: 20px;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+button {
+  margin-right: 5px;
+  padding: 5px 10px;
+}

@@ -1,0 +1,209 @@
+
+
+/* ============== Global Style ============= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+*{
+  font-family: "Inter", sans-serif;
+   color: rgb(14, 11, 61);
+   padding: 0;
+   margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(83, 84, 121);
+}
+
+ul{
+  list-style: none;
+}
+
+p{
+  line-height: 2;
+  font-size: 18px;
+}
+
+h1{
+  letter-spacing: -1px;
+  font-size: 62px;
+  margin: 15px 0px 10px
+}
+h2{
+  font-size: 56px;
+}
+
+h3{
+  font-size: 40px;
+}
+
+li{
+  display: inline-block;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.btn{
+  padding: 15px 30px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.btn-outline{
+  border: 1px solid rgba(37, 31, 182, .13);
+}
+
+.btn-bg{
+  background-color: rgb(20, 99, 255);
+  color: #fff;
+}
+
+
+
+
+
+/* ============== Navbar =================== */
+
+.main-nav{
+  width: 1000px;
+  margin: 50px auto;
+}
+
+.nav-logo {
+  float: left;
+}
+
+.nav-list{
+  float: right;
+}
+
+
+
+/* ============== Hero =================== */
+
+
+.hero{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hero-subtitle{
+  text-transform: uppercase;
+   font-size: 14px;
+    color: rgb(20, 99, 255);
+}
+
+.hero-description{
+    margin-bottom: 30px;
+}
+
+
+
+/* ============== Features =================== */
+
+.features{
+   background-color: rgb(247, 249, 252);
+   margin: 200px 200px 150px;
+   border-radius: 24px;
+}
+
+
+/* ============== Features-team =================== */
+
+
+.team-content{
+  width: 45%;
+  float: left;
+  padding: 100px 0px 100px 100px;
+}
+
+.team-bg{
+  background-image: url(images/team_bg.webp);
+  width: 40%;
+  height: 600px;
+  background-size: 100% 100%;
+  float: right;
+
+}
+
+.team-text , .integration-text{
+  margin: 20px 0px;
+}
+
+
+
+/* ============== Features Integration =================== */
+
+
+.integration-content{
+  float: right;
+  width: 45%;
+  padding: 100px 0px 0px 10px;
+}
+
+.integration-icon , .team-icon{
+  width: 72px;
+  height: 72px;
+  margin-bottom: 35px;
+}
+
+.integration-bg{
+  background-image: url(images/integrations_bg.webp);
+  width: 40%;
+  height: 600px;
+  background-size: 100% 100%;
+  float: left;
+
+}
+
+
+/* ============== Payments =================== */
+
+.payments {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.payments-subtitle{
+  text-transform: uppercase;
+   font-size: 14px;
+   color: rgb(114, 20, 255);
+}
+
+
+
+/* ============== Footer =================== */
+
+.footer{
+   background-color: rgb(247, 249, 252);
+   margin: 0px 200px 50px;
+   padding: 24px 40px;
+   border-radius: 12px;
+}
+.footer-subtitle{
+  font-size: 14px;
+  float: left;
+}
+
+.footer-list{
+  float: right;
+}
+
+.footer-list   a{
+  font-size: 22px;
+  margin: 0px 10px;
+    
+}
+
+.footer-list i{
+      color: rgb(83, 84, 121);
+
+}
+
+
+

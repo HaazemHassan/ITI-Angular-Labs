@@ -1,0 +1,183 @@
+/* general */
+* {
+  color: #111a45;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(83, 84, 121);
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  line-height: 2;
+  font-size: 18px;
+}
+
+h1 {
+  letter-spacing: -1px;
+  font-size: 62px;
+  margin: 15px 0px 10px;
+}
+h2 {
+  font-size: 56px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+li {
+  display: inline-block;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.btn-outline {
+  border: 1px solid rgba(37, 31, 182, 0.13);
+}
+
+.btn-bg {
+  background-color: #251fb6;
+  color: #fff;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+/* ##### Navbar ##### */
+
+.main-nav {
+  max-width: 85%;
+  margin: 30px auto 100px;
+}
+
+.nav-logo {
+  float: left;
+}
+
+.nav-links {
+  float: right;
+}
+
+/* ##### Hero ##### */
+
+.hero {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.hero-title span,
+.how-it-works-title span {
+  background-color: #dbddff;
+}
+
+/* ##### How it works ##### */
+
+.how-it-works {
+  text-align: center;
+  margin: 100px auto;
+}
+
+.steps {
+  max-width: 70%;
+  margin: 70px auto;
+}
+
+.step {
+  margin-bottom: 100px;
+}
+
+.step-content {
+  font-size: 10px;
+  max-width: 30%;
+  text-align: left;
+}
+
+.step-image {
+  max-width: 70%;
+  margin: auto;
+  background-color: #f1f1f8;
+  padding: 50px;
+}
+
+.step-frame {
+  width: 350px;
+}
+
+.step-title {
+  font-size: 40px;
+  margin: 30px 0;
+}
+
+.step-subtitle {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* ##### Testimonials ##### */
+
+.testimonials {
+  margin: 100px auto;
+  width: 75%;
+  background-color: #f1f1f8;
+  padding: 80px;
+  border-radius: 20px;
+}
+
+.testimonial-image-container {
+  width: 30%;
+}
+.testimonial-image {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.testimonial-title {
+  margin: 50px 0;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+/* ##### Footer ##### */
+
+.footer {
+  /* background-color: #111a45; */
+  background-color: black;
+  width: 90%;
+  margin: 100px auto 10px;
+  padding: 30px;
+}
+
+.footer-links {
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.fa-brands {
+  color: #aab7c6;
+  margin: 0 18px;
+}
+
+.footer-logo {
+  color: white;
+}

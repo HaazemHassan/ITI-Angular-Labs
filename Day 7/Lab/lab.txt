@@ -1,0 +1,4 @@
+1. stop watch
+2. traffic light (mouseleave, mouse enter)
+3. slider
+4. cookie
