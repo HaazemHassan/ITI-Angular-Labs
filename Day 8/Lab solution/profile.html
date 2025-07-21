@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <div class="profile-container">
+      <button class="back-btn" onclick="goBack()">Back to Users</button>
+
+      <div id="loading" class="loading">loading user.....</div>
+      <div id="error" class="error">
+        Error loading user profile. Please go back and try again.
+      </div>
+
+      <div id="profile-content">
+        <div class="profile-header">
+          <h1 id="userName">User Profile</h1>
+          <p id="userUsername"></p>
+        </div>
+
+        <div class="profile-section">
+          <h3>user Information</h3>
+          <div class="profile-info">
+            <div class="info-item">
+              <span class="info-label">Full Name:</span>
+              <span class="info-value" id="fullName"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Username:</span>
+              <span class="info-value" id="username"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email:</span>
+              <span class="info-value" id="email"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Phone:</span>
+              <span class="info-value" id="phone"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Website:</span>
+              <span class="info-value" id="website"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-section">
+          <h3>adress info</h3>
+          <div class="profile-info">
+            <div class="info-item">
+              <span class="info-label">Street:</span>
+              <span class="info-value" id="street"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Suite:</span>
+              <span class="info-value" id="suite"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">City:</span>
+              <span class="info-value" id="city"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Zipcode:</span>
+              <span class="info-value" id="zipcode"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Latitude:</span>
+              <span class="info-value" id="lat"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Longitude:</span>
+              <span class="info-value" id="lng"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-section">
+          <h3>company Information</h3>
+          <div class="profile-info">
+            <div class="info-item">
+              <span class="info-label">Company Name:</span>
+              <span class="info-value" id="companyName"></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Catch Phrase:</span>
+              <span class="info-value" id="catchPhrase"></span>
+            </div>
+            <div class="info-item business-info">
+              <span class="info-label">Business:</span>
+              <span class="info-value" id="business"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="profile.js"></script>
+  </body>
+</html>

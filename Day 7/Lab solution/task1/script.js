@@ -40,21 +40,21 @@ function reset() {
 
 function updateTime() {
   var now = Date.now();
-  var elapsed = now - startTime;
+  var timeInMs = now - startTime;
 
-  var hours = Math.floor(elapsed / 3600000);
-  elapsed -= hours * 3600000;
+  var hours = Math.floor(timeInMs / 3600000);
+  timeInMs -= hours * 3600000;
 
-  var minutes = Math.floor(elapsed / 60000);
-  elapsed -= minutes * 60000;
+  var minutes = Math.floor(timeInMs / 60000);
+  timeInMs -= minutes * 60000;
 
-  var seconds = Math.floor(elapsed / 1000);
-  elapsed -= seconds * 1000;
+  var seconds = Math.floor(timeInMs / 1000);
+  timeInMs -= seconds * 1000;
 
   hoursElement.innerHTML = hours.toString().padStart(2, "0");
   minutesElement.innerHTML = minutes.toString().padStart(2, "0");
   secondsElement.innerHTML = seconds.toString().padStart(2, "0");
-  millisecondsElement.innerHTML = elapsed.toString().padStart(3, "0");
+  millisecondsElement.innerHTML = timeInMs.toString().padStart(3, "0");
 }
 
 startStopBtn.addEventListener("click", startStop);

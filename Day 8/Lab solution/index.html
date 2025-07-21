@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Api data display</h1>
+
+      <div class="top-bar">
+        <div class="search-box">
+          <input type="text" placeholder="userId: 5" />
+          <button class="btn search-btn">Search</button>
+        </div>
+        <button class="btn fetch-btn">Fetch Users</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
