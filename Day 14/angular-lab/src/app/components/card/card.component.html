@@ -1,0 +1,11 @@
+@if(show) {
+<div class="card">
+  <img alt="image" [src]="imagePath" class="profile-img" />
+  <h2>{{ name | uppercase }}</h2>
+  <h4>{{ jobTitle }}</h4>
+  <p>
+    {{ description }}
+  </p>
+  <button class="remove-btn" (click)="deleteCard()">Remove</button>
+</div>
+}
