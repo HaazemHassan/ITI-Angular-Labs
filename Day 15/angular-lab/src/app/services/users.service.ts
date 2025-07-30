@@ -12,7 +12,7 @@ export interface User {
   providedIn: 'root',
 })
 export class UsersService {
-  private users: User[] = [
+  public users: User[] = [
     {
       id: 1,
       imagePath:
