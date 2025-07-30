@@ -1,0 +1,13 @@
+<input
+  (input)="onSearchBarTextChange($event)"
+  class="search-input"
+  type="text"
+  placeholder="name"
+/>
+<div class="container">
+  @for (item of users; track $index) {
+  <div [ngClass]="{ 'last-card': $index === users.length - 1 }">
+    <app-card [user]="item" (remove)="removeUser($event)"></app-card>
+  </div>
+  }
+</div>
