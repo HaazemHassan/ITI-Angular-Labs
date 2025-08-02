@@ -1,0 +1,18 @@
+<header>
+  <!-- @if(userService.isLoggedIn){ Welcome {{ user.name }}! } @else { Please Login!
+  } 
+  
+  @if(!userService.isLoggedIn){
+  <app-login-btn></app-login-btn>
+  }
+  @else {
+    <button (click)="logOut()">Log Out</button>
+
+  } -->
+
+  @for (item of routes; track $index) {
+  <a [routerLink]="item.path" routerLinkActive="link-active">{{
+    item.title
+  }}</a>
+  }
+</header>

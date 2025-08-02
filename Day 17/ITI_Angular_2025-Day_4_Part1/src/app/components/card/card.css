@@ -1,0 +1,16 @@
+.card {
+  background-color: #eee;
+  padding: 0.7rem;
+  h3 {
+    color: red;
+  }
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 250px;
+}
+
+.image {
+  width: 300px;
+}

@@ -1,0 +1,19 @@
+<div class="users-container">
+  <input
+    (input)="onSearchBarTextChange($event)"
+    class="search-input"
+    type="text"
+    placeholder="search"
+  />
+
+  <div class="users-grid">
+    @if (filteredUsers.length > 0) { @for (user of filteredUsers; track user.id;
+    let i = $index) {
+    <div [ngClass]="{ 'last-card': i === filteredUsers.length - 1 }">
+      <app-card [user]="user" (remove)="removeUser($event)"></app-card>
+    </div>
+    } } @else {
+    <p class="no-users">no users</p>
+    }
+  </div>
+</div>

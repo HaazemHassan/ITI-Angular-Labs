@@ -1,0 +1,13 @@
+<div class="card">
+  id: {{ userId() }}
+  <ng-content select=".header"></ng-content>
+
+  <h3 #userNameContainer>{{ userNameInput() }}</h3>
+  <p>
+    {{ bioInput() }}
+  </p>
+  <!-- <button (click)="onBtnClick()">Go to User Details</button> -->
+
+  <a [routerLink]="['/profile', userId()]">Go to User Details</a>
+  <ng-content select="button"></ng-content>
+</div>

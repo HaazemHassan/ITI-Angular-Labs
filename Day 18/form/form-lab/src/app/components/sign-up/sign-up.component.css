@@ -1,0 +1,87 @@
+/* Clean & Modern Flat Sign-up Form */
+form {
+  max-width: 420px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1f2937;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background-color: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 1.8rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+button:active {
+  background-color: #1d4ed8;
+}
+
+.error-msg {
+  margin-top: 1rem;
+  padding: 12px;
+  background-color: #fef2f2;
+  color: #b91c1c;
+  border-left: 4px solid #f87171;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* Input validation styles */
+input.ng-invalid.ng-dirty {
+  border-color: #f87171;
+  background-color: #fef2f2;
+}
+
+input.ng-valid.ng-dirty {
+  border-color: #4ade80;
+  background-color: #f0fdf4;
+}

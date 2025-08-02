@@ -1,0 +1,23 @@
+<section style="display: flex; flex-direction: column; gap: 5px">
+  @for (user of userService.users(); track $index) {
+  <div>
+    <!-- <span>{{ user.id }} </span> -->
+    <span>{{ user.name }} </span>
+    <span> {{ user.email }}</span>
+  </div>
+  <hr />
+  }
+</section>
+
+<br />
+<br />
+<br />
+
+<form>
+  <label>Name</label>
+  <input type="text" #name /><br>
+  <label>Email</label>
+  <input type="text" #email />
+</form>
+
+<button (click)="addUserHandler(name.value, email.value)">Add User</button>

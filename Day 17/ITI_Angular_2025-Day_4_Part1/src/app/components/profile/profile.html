@@ -1,0 +1,10 @@
+@if(user){
+<div>
+  <h1>User Id::: {{ user.id }}</h1>
+  <h1>User Name::: {{ user.name }}</h1>
+  <!-- <a routerLink="/home">Back</a> -->
+
+  <button (click)="backToHome()">Back</button>
+
+</div>
+}@else { No User Found. }
