@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>User Management Dashboard</h1>
+  <div class="header-content">
+    @if(viewUserForm) {
+    <app-user-form
+      [formPurpose]="'Add'"
+      (cancelForm)="viewUserForm = false"
+    ></app-user-form>
+    }
+    <app-search-component
+      (searchInputChange)="onGetSearchValue($event)"
+    ></app-search-component>
+    <button class="btn btn-add" (click)="viewUserForm = true">Add User</button>
+  </div>
+</div>

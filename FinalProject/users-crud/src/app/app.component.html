@@ -1,0 +1,5 @@
+<div class="app-container">
+  <app-header (getSearchValue)="onGetSearchValue($event)"></app-header>
+  <app-users-table [searchValue]="searchValue"></app-users-table>
+  <router-outlet></router-outlet>
+</div>

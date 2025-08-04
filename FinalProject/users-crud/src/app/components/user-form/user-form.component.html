@@ -1,0 +1,38 @@
+<div class="backdrop"></div>
+<dialog open>
+  <h2>{{ formPurpose }} User</h2>
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <p>
+      <label for="name">Name</label>
+      <input type="text" id="name" formControlName="name" />
+      @if (nameControl?.invalid && nameControl?.touched) {
+      <span class="error">
+        @if (nameControl?.errors?.['required']) {
+        <span>Name is required</span>
+        } @if (nameControl?.errors?.['minlength']) {
+        <span>Name must be at least 3 characters long</span>
+        }
+      </span>
+      }
+    </p>
+
+    <p>
+      <label for="email">Email</label>
+      <input id="email" formControlName="email" />
+      @if (emailControl?.invalid && emailControl?.touched) {
+      <span class="error">
+        @if (emailControl?.errors?.['required']) {
+        <span>Email is required</span>
+        } @if (emailControl?.errors?.['email']) {
+        <span>Please enter a valid email address</span>
+        }
+      </span>
+      }
+    </p>
+
+    <p class="actions">
+      <button class="btn" type="button" (click)="onCancel()">Cancel</button>
+      <button class="btn" type="submit">{{ formPurpose }}</button>
+    </p>
+  </form>
+</dialog>
